@@ -23,7 +23,10 @@ public class DozerTest {
 		classA1.setLongField1(10000L);
 		
 		a.setClassA1(classA1);
+		System.out.println(a);
+
 		ClassB b = DozerUtil.mapper(a);
+		System.out.println(b);
 		
 		Assert.assertEquals(a.getStringField(), b.getStringField());
 		System.out.println(a);
