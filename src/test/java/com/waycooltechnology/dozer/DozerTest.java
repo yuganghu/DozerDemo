@@ -25,7 +25,8 @@ public class DozerTest {
 // Log the object instead of printing
 // logger.debug(a.toString());
 		System.out.println(a);
-
+// Log the object instead of printing
+// logger.debug(b.toString());
 		ClassB b = DozerUtil.mapper(a);
 		System.out.println(b);
 		
