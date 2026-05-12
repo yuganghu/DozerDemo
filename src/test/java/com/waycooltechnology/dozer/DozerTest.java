@@ -22,7 +22,8 @@ public class DozerTest {
 		classA1.setBooleanField1(true);
 		classA1.setLongField1(10000L);
 		
-		a.setClassA1(classA1);
+// Log the object instead of printing
+// logger.debug(a.toString());
 		System.out.println(a);
 
 		ClassB b = DozerUtil.mapper(a);
