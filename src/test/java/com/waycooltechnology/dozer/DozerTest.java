@@ -27,7 +27,8 @@ public class DozerTest {
 		System.out.println(a);
 // Log the object instead of printing
 // logger.debug(b.toString());
-		ClassB b = DozerUtil.mapper(a);
+// Remove the redundant System.out call
+// logger.debug(a.toString());
 		System.out.println(b);
 		
 		Assert.assertEquals(a.getStringField(), b.getStringField());
